@@ -1,126 +1,157 @@
+/*GENERAL*/
 @font-face {
     font-family: 'mainFont';
-    src: url(../fonts/Cuprum-VariableFont_wght)
+    src: url(../fonts/Cuprum-VariableFont_wght.ttf)
 }
 
-@font-face {
-    font-family: 'titleFont';
-    src: url(../fonts/Roboto-Black.ttf);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-    *{
-        margin: 0;
-        padding: 0;    
-    }
-
-html, body{
-width: 100%;
-height: 100vh;
+html,
+body {
+    width: 100%;
+    height: 100vh;
 }
 
-body{
+body {
     display: grid;
     grid-template-areas: "header"
-    "content"
-    "footer";
-    
+        "content"
+        "footer";
+
+    font-family: 'mainFont';
+
+    background-color: rgb(40, 40, 40);
 }
-.styleHeader{
+
+/*CABECERA*/
+header {
     grid-area: header;
-    font-size: 15px ;
+    font-size: 15px;
     color: white;
-    
+
     padding: 30px;
     display: flex;
-    background: linear-gradient(to right,  #161616,#2b2b2b);   
-    /* background: linear-gradient(rgb(40, 40, 40), rgb(65, 65, 65));*/
+    background: linear-gradient(to right, #161616, #2b2b2b);
+
     justify-content: space-between;
     align-items: center;
 }
 
-.content{
+/*CONTENIDO*/
+.content {
     grid-area: content;
 }
 
-footer{
-    grid-area: footer;
-margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(40, 40, 40);
-    background: linear-gradient(to right,  #161616,#2b2b2b);  
-    margin-top: 20px
-    color white;
-    height: 250px;
-    font-size: 30px;
-}
-
-
-p{
-    background-color: white;
-    opacity: 0.8;
-}
-
-
-ul{
-    list-style:none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.itemList{
+.itemList {
     font-size: 20px;
     padding: 20px;
-    
 }
 
-.itemList:hover{
+.itemList:hover {
     border-radius: 10px;
     background-color: rgb(48, 152, 243);
-    
 }
 
-a{
-    text-decoration: none;  
-    color: white;   
-    font-weight: bold;
-    
+.imageStyle {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30%;
 }
 
-.textContentStyle{
+.textContentStyle {
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 30px;
     background-color: rgba(248, 248, 248, 0);
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../assets/img/hamburgerMenu.png);
+    width: 30px;
+    height: 30px;
 
-.imageStyle{
-    margin-bottom: 30px;
-    width: 100%;
-    height: 100vh;
 }
 
+navbar-nav{
+   align-items: center;
+}
 
-h3{
+.carousel{
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    background-color: white;
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.opiniones {
     padding: 50px;
-    color:white;
+    color: white;
 }
 
-.stylePresentation{
-    display:flex;
+.stylePresentation {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 25px;
-    margin-bottom: 90px;
+}
+
+.stylePresentation div{
+   margin-top: 1rem;
+   margin-bottom: 3rem;
 }
 
 
-.styleTexto{
+/*PIE DE PAGINA*/
+footer {
+    grid-area: footer;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    background: linear-gradient(to right, #161616, #2b2b2b);
+    margin-top: 20px color white;
+    height: 250px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.styleTexto {
     height: 500px;
     width: 500px;
     border: white solid;
@@ -128,7 +159,7 @@ h3{
     border-width: 1.5px;
     margin: 10px;
     text-align: center;
-    
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -136,122 +167,107 @@ h3{
     box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.05) 25px 25px;
 }
 
-.myBodyIndex{
-    background-color: rgb(40, 40, 40);
-}
+.styleTabla {
 
-body{
-    font-family: 'Cuprum', sans-serif;
-}
-
-.styleTabla{
-    
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
-    
+
 }
 
-table{
+table {
     height: 300px;
     width: 50%;
 }
 
-.fa-brands fa-facebook{
+.socialMedia {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.fa-brands fa-facebook {
     color: white;
     height: 50px;
     width: 50px;
 }
 
-#facebook:hover{
+#facebook:hover {
     transition: 2sec;
     font-size: 100px;
-    color:rgb(42,115,186)
+    color: rgb(42, 115, 186)
 }
 
-#whatsapp:hover{
+#whatsapp:hover {
     transition: 2sec;
     font-size: 100px;
-    color:rgb(  42, 183, 64)
+    color: rgb(42, 183, 64)
 }
 
-#twitter:hover{
+#twitter:hover {
     transition: 2sec;
     font-size: 100px;
-    color:rgb( 29, 161, 242)
-}
-
-.socialMedia{
-   display: flex;
-   margin: 50px;
+    color: rgb(29, 161, 242)
 }
 
 
-iframe{
+
+
+iframe {
     height: 1000px;
 }
-h2, label,legend{
+
+h2,
+label,
+legend {
     color: white;
 }
-form,fieldset{
+
+form,
+fieldset {
 
     margin-top: 50px;
 }
 
 
-.etiquetaMenu{
+.etiquetaMenu {
     display: none;
 }
 
 
-#check{
+#check {
     display: none;
-   }
+}
 
-main h3, main h2{
+main h3,
+main h2 {
     text-align: center;
 }
 
 
-/*
-@media (max-width: 1000px) {
-    
-    header{
 
-        display: flex;
-        flex-direction: column;
-text-align: center;
-    }
 
-    .etiquetaMenu{
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+@media (max-width: 992px) {
+    header {
+
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .etiquetaMenu{
-        cursor: pointer;
+    .centerItems{
+    align-items: center;
+}        
+.navegationBar{
+    justify-content: center;
+
+}
     }
-
-    header ul{
-        display: none;
-    }
-
-#check:checked ~ ul{
-    display: flex;
-    flex-direction: column;
-
-    transition: 2sec;
-    height: 100%;
-}
-
-}
-
-*/
-
-.bg-light{
-    background-color: transparent !important;
-}
-
+  

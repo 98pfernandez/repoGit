@@ -1,92 +1,111 @@
-.projects{
-background-color: rgb(255, 255, 255);
-margin:10px;
+.projects {
+    background-color: #282828;
+    margin: 10px;
 
-border-radius: 10px ;
-border:35px solid;
-border-color: black;
-border-width: 1px;
+    border-radius: 10px;
+    border: 35px solid;
+    border-color: black;
+    border-width: 1px;
+    color: white;
 
-height: 450px;
-width: 450px;
-overflow: hidden;
+    height: 450px;
+    width: 450px;
+    overflow: hidden;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
 
-box-shadow: 10px 8px 5px 6px rgba(0,0,0,0.2);
--webkit-box-shadow: 10px 8px 5px 6px rgba(0,0,0,0.2);
--moz-box-shadow: 10px 8px 5px 6px rgba(0,0,0,0.2);
+    box-shadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 8px 5px 6px rgba(0, 0, 0, 0.2);
 
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
-.projects:hover{
+
+.card-header{
+    border-bottom: 1px solid rgb(255 255 255 / 13%);
+}
+
+
+
+.projects:hover {
     transition: 2s;
     transform: scale(1.05);
 }
 
-.projects:not(:hover){
+.projects:not(:hover) {
     transition: 1s;
     transform: scale(1);
 }
 
-.projectTitle{
+.projectTitle {
     color: black;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: center;
+
 }
 
-.card-header{
+.card-header {
     width: 100%;
     height: 15%;
 }
 
-img{
+img {
     height: 240px;
     width: 350px;
 }
 
-h3{
+h3 {
     margin: 0px;
     padding: 0px;
 }
 
 @media (max-width: 1000px) {
-    
-    header{
 
-        display: flex;
-        flex-direction: column;
-text-align: center;
-    }
+    header {
 
-    .etiquetaMenu{
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .etiquetaMenu{
+    .etiquetaMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .etiquetaMenu {
         cursor: pointer;
     }
 
-    header ul{
+    header ul {
         display: none;
     }
 
-#check:checked ~ ul{
-    display: flex;
-    flex-direction: column;
+    #check:checked~ul {
+        display: flex;
+        flex-direction: column;
 
-    transition: 2sec;
-    height: 100%;
+        transition: 2sec;
+        height: 100%;
+    }
+
 }
 
+.projects div{
+    background-color: #282828; 
+}
+
+p{
+    background-color: #282828;
+    color: white;
 }
