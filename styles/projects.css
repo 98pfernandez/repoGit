@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'mainFont';
+    src: url(../fonts/Cuprum-VariableFont_wght.ttf)
+}
+
 .projects {
     background-color: #282828;
     margin: 10px;
