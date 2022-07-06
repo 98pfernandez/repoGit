@@ -3,6 +3,12 @@
     src: url(../fonts/Cuprum-VariableFont_wght.ttf)
 }
 
+
+/* 
+
+CARDS 
+
+*/
 .projects {
     background-color: #282828;
     margin: 10px;
@@ -13,8 +19,8 @@
     border-width: 1px;
     color: white;
 
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     overflow: hidden;
 
     display: flex;
@@ -64,15 +70,24 @@ main {
 }
 
 img {
-    height: 240px;
-    width: 350px;
+    height: 190px;
+    width: 300px;
 }
 
 h3 {
     margin: 0px;
     padding: 0px;
 }
+.projects div{
+    background-color: #282828; 
+}
 
+p{
+    background-color: #282828;
+    color: white;
+}
+
+/*RESPONSIVE*/
 @media (max-width: 1000px) {
 
     header {
@@ -106,11 +121,3 @@ h3 {
 
 }
 
-.projects div{
-    background-color: #282828; 
-}
-
-p{
-    background-color: #282828;
-    color: white;
-}

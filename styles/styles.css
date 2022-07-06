@@ -26,7 +26,11 @@ body {
     background-color: rgb(40, 40, 40);
 }
 
-/*CABECERA*/
+/*
+
+CABECERA
+
+*/
 header {
     grid-area: header;
     font-size: 15px;
@@ -179,7 +183,11 @@ main h2 {
 
 
 
-/*PIE DE PAGINA*/
+/*
+
+PIE DE PAGINA
+
+*/
 footer {
     grid-area: footer;
     margin-top: 50px;
