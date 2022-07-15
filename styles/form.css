@@ -42,7 +42,6 @@ header {
     padding: 30px;
     display: flex;
     background: linear-gradient(to right, #161616, #2b2b2b);
-    /* background: linear-gradient(rgb(40, 40, 40), rgb(65, 65, 65));*/
     justify-content: space-between;
     align-items: center;
 }
