@@ -28,10 +28,17 @@ form{
 
 input{
     width: 100%;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.051);
+    border-color: rgba(255, 255, 255, 0.644);
+    color: white;
 }
 
 textarea{
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.051);
+    border-color: rgba(255, 255, 255, 0.644);
+    color: white;
 }
 
 header {
