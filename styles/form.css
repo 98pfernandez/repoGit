@@ -23,7 +23,9 @@ body {
 }
 
 form{
-    margin: 10%;
+ margin-left: 10%;
+ margin-top: 10%;
+ margin-bottom: 10%;
 }
 
 input{
@@ -32,6 +34,13 @@ input{
     background-color: rgba(0, 0, 0, 0.051);
     border-color: rgba(255, 255, 255, 0.644);
     color: white;
+}
+
+.formButton:hover{
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(255, 255, 255, 0.404);
+    color: black;
 }
 
 textarea{
@@ -273,6 +282,10 @@ fieldset {
 
     .formulario{
         width: 50%;
+    }
+
+    form{
+        margin: 10%;
     }
 }
 
