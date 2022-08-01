@@ -67,6 +67,10 @@ CONTENIDO
 .imageStyle {
     margin-bottom: 30px;
     width: 100%;
+    height: 100%;
+}
+
+.carousel-item{
     height: 100vh;
 }
 

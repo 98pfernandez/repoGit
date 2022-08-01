@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="./fonts/icons/css/all.css">
   <link rel="stylesheet" href="./styles/styles.css">
 
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -71,7 +74,7 @@
 
 
     <div class="stylePresentation">
-      <div class="styleTexto">
+      <div class="styleTexto" data-aos="fade-up">
         <h2>¿Quiénes somos?</h2>
         <p class="textContentStyle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, libero deserunt? Ut
           corrupti deserunt expedita earum? Libero eligendi maiores quos ex optio laborum cumque vitae aperiam ea,
@@ -80,7 +83,7 @@
           ducimus fuga eveniet numquam error exercitationem!</p>
       </div>
 
-      <div class="styleTexto">
+      <div class="styleTexto" data-aos="fade-up">
         <h2>¿A qué nos dedicamos?</h2>
         <p class="textContentStyle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, libero deserunt? Ut
           corrupti deserunt expedita earum? Libero eligendi maiores quos ex optio laborum cumque vitae aperiam ea,
@@ -89,7 +92,7 @@
           ducimus fuga eveniet numquam error exercitationem!</p>
       </div>
 
-      <div class="styleTexto">
+      <div class="styleTexto" data-aos="fade-up">
         <h2>Equipo</h2>
         <p class="textContentStyle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, libero deserunt? Ut
           corrupti deserunt expedita earum? Libero eligendi maiores quos ex optio laborum cumque vitae aperiam ea,
@@ -111,6 +114,15 @@
 
     </ul>
   </footer>
+
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      once: true, // whether animation should happen only once - while scrolling down
+    });
+  </script>
 </body>
 
 </html>
