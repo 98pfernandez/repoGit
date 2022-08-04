@@ -324,6 +324,7 @@ fieldset {
         display: none;
     }
 
+    /*MENU RESPONSIVO HECHO A MANO*/
     #check:checked~ul {
         display: flex;
         flex-direction: column;

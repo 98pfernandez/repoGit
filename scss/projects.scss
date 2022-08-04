@@ -110,13 +110,4 @@ img {
     header ul {
         display: none;
     }
-
-    //MENU RESPONSIVO HECHO A MANO
-    #check:checked~ul {
-        display: flex;
-        flex-direction: column;
-
-        transition: 2sec;
-        height: 100%;
-    }
 }
